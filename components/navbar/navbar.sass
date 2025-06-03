@@ -1,4 +1,14 @@
 .sideBar
-    @apply fixed top-0 -left-full z-50 opacity-0 transition-all duration-300 ease-in-out invisible
+    @apply fixed top-0 -left-full h-screen z-50 opacity-0 transition-all duration-300 ease-in-out invisible
     &.active
         @apply opacity-100 left-0 visible
+
+    @screen sm
+        @apply opacity-100 visible left-0
+
+.sidebar-overlay
+    @apply fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 opacity-0 invisible
+    &.active
+        @apply opacity-100 visible
+    @screen sm
+        @apply hidden

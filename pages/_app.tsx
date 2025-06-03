@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 
 import { fontIBM } from "@/config/fonts";
 import "@/styles/globals.sass";
+import DefaultLayout from "@/layouts/default";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -13,7 +14,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <HeroUIProvider navigate={router.push}>
       <NextThemesProvider defaultTheme="light">
-        <Component {...pageProps} />
+        <DefaultLayout>
+          <Component {...pageProps} />
+        </DefaultLayout>
       </NextThemesProvider>
     </HeroUIProvider>
   );
