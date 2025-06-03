@@ -6,7 +6,6 @@ import React from 'react';
 interface ImageOptimizeProps extends Omit<ImageProps, 'src'> {
     src: string;
     alt: string;
-    priority?: boolean;
     fallbackSrc?: string;
     className?: string;
     lazyLoad?: boolean;
@@ -15,7 +14,6 @@ interface ImageOptimizeProps extends Omit<ImageProps, 'src'> {
 const ImageOptimize: React.FC<ImageOptimizeProps> = ({
     src,
     alt = '',
-    priority = false,
     fallbackSrc = '/fallback.jpg',
     className = '',
     lazyLoad = true,
@@ -24,11 +22,10 @@ const ImageOptimize: React.FC<ImageOptimizeProps> = ({
     const [imgSrc, setImgSrc] = React.useState(src);
 
     return (
-        <Image
+        <img
             src={imgSrc}
             alt={alt}
             onError={() => setImgSrc(fallbackSrc)}
-            priority={priority}
             loading={lazyLoad ? 'lazy' : 'eager'}
             className={className}
             {...props}

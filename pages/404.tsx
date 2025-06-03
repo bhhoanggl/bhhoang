@@ -18,7 +18,7 @@ export default function Error404() {
                 <p className="mt-2 text-gray-600">Có vẻ bạn đang lạc vào thế giới chưa được tạo ra 🐣</p>
                 <Link
                     href="/"
-                    className="mt-6 inline-block rounded-xl bg-yellow-500 text-white px-5 py-2 hover:bg-pink-500 transition"
+                    className="mt-6 btn btn-primary"
                 >
                     Về trang chủ
                 </Link>

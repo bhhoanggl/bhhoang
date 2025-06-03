@@ -43,6 +43,7 @@ const config = {
           bullet: "rgba(0, 0, 0, 0.8)",
           bulletlight: "rgba(0, 0, 0, 0.4)",
           overlay: "rgba(248, 169, 0, 0.8 )",
+          "141313": "#141313",
           gradient: "linear-gradient(45deg, #feda77, #dd2a7b, #8134af, #515bd4)"
         },
         secondary: {
@@ -50,7 +51,8 @@ const config = {
           AEC7C3: "#AEC7C3",
           224376: "#224376",
           "122F5B": "#122F5B",
-          "2056A9": "#2056A9"
+          "2056A9": "#2056A9",
+          "141313": "#141313"
         }
       }
     }

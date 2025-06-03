@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html suppressHydrationWarning lang="en">
       <Head />
       <body
         className={clsx(

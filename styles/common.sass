@@ -1,0 +1,58 @@
+.btn
+    background: #141313
+    z-index: 1
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 0
+        height: 100%
+        background: linear-gradient(to right, #B86ADF, #FF6C63, #FFB147)
+        transition: width 0.3s ease-in-out
+        z-index: -1
+    @apply py-[18px] px-[40px] rounded-none text-white font-medium text-lg leading-[24px] cursor-pointer relative overflow-hidden
+
+    &:hover
+        &::after
+            width: 100%
+
+    &-primary
+        @apply bg-[#141313]
+        &:hover::after
+            width: 100%
+
+    &-secondary
+        @apply bg-[#141313]
+        &:hover::after
+            width: 100%
+
+.hover
+    @apply transition-all duration-300 ease-in-out relative
+    &-gradient
+        &:hover
+            background: linear-gradient(to right, #B86ADF, #FF6C63, #FFB147)
+            transition: background 0.5s ease-in-out
+
+.nav-link
+    @apply text-white no-underline py-0 px-2 transition-all relative w-max
+    &::after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        width: 0
+        height: 4px
+        z-index: -1
+        background: linear-gradient(to right, #B86ADF, #FF6C63, #FFB147)
+        transition: width 0.3s ease-in-out
+        transform: translate(-50%, -50%)
+
+    &:hover
+        @apply font-semibold
+        &::after
+            width: 100%
+
+    &.active
+        &::after
+            width: 100%
