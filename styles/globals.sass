@@ -6,7 +6,44 @@
 
 @layer base
   html
-    font-size: 16px
+    @apply scroll-smooth
 
   body
-    @apply bg-gray-100 text-gray-900 font-body
+    @apply font-body text-gray-900 bg-white
+  h1, h2, h3, h4, h5, h6
+    @apply font-bold m-0 p-0
+
+@layer components
+  .gradient-text
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600
+
+@layer utilities
+  .aspect-w-1
+    position: relative
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%)
+    > *
+      position: absolute
+      height: 100%
+      width: 100%
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+
+  .aspect-h-1
+    --tw-aspect-h: 1
+
+  .aspect-w-16
+    position: relative
+    padding-bottom: calc(var(--tw-aspect-h) / 16 * 100%)
+    > *
+      position: absolute
+      height: 100%
+      width: 100%
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+
+  .aspect-h-9
+    --tw-aspect-h: 9

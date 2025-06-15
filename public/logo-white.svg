@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="50" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Logo Container -->
+    <g id="logo">
+        <!-- Logo Symbol -->
+        <g id="symbol">
+            <!-- Main Circle -->
+            <circle cx="25" cy="25" r="20" fill="white" fill-opacity="0.9"/>
+            
+            <!-- BH Monogram -->
+            <path d="M15 15H20C22.2 15 24 16.8 24 19V22C24 24.2 22.2 26 20 26H15V15Z" fill="#1E293B"/>
+            <path d="M15 28H20C22.2 28 24 29.8 24 32V35C24 37.2 22.2 39 20 39H15V28Z" fill="#1E293B"/>
+            <path d="M26 15H31V26H26V15ZM26 28H31V39H26V28Z" fill="#1E293B"/>
+        </g>
+
+        <!-- Text HOANG -->
+        <g id="text" transform="translate(55, 33)" fill="white">
+            <path d="M0 -15H5V-3H13V-15H18V15H13V2H5V15H0V-15Z"/>
+            <path d="M23 -15H40V-11H28V-3H35V1H28V11H40V15H23V-15Z"/>
+            <path d="M45 -15H50L55 8L60 -15H65L58 15H52L45 -15Z"/>
+            <path d="M70 -15H75L80 8L85 -15H90L83 15H77L70 -15Z"/>
+            <path d="M95 -15H112V-11H100V15H95V-15Z"/>
+        </g>
+    </g>
+</svg>

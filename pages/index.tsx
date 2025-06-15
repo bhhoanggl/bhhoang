@@ -1,7 +1,10 @@
-import Home from "./home/home";
+import React from 'react'
+import HomePage from './home'
 
-export default function IndexPage() {
-  return (
-    <Home />
-  );
+const Home = () => {
+    return (
+        <HomePage />
+    )
 }
+
+export default Home

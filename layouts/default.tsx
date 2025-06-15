@@ -3,6 +3,7 @@ import { useState } from "react";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import { Head } from "./head";
 import { Sidebar } from "@/components/navbar/sidebar";
+import ScrollToTop from "@/components/common/ScrollToTop";
 
 export default function DefaultLayout({
   children,
@@ -24,7 +25,7 @@ export default function DefaultLayout({
       <Head />
       <div className="relative flex min-h-screen">
         <Sidebar />
-        <main className="flex-1 ml-0 sm:pl-[285px] overflow-x-hidden">
+        <main className="flex-1 ml-0 overflow-x-hidden">
           {children}
         </main>
         <button
@@ -34,6 +35,7 @@ export default function DefaultLayout({
           {isSidebarOpen ? <IconX size={24} /> : <IconMenu2 size={24} />}
         </button>
       </div>
+      <ScrollToTop />
     </>
   );
 }

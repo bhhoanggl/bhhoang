@@ -12,3 +12,25 @@
         @apply opacity-100 visible
     @screen sm
         @apply hidden
+.nav-link
+    @apply text-white no-underline py-0 px-2 transition-all relative w-max
+    &::after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        width: 0
+        height: 4px
+        z-index: -1
+        background: linear-gradient(to right, #2563eb, #7c3aed)
+        transition: width 0.3s ease-in-out
+        transform: translate(-50%, -50%)
+
+    &:hover
+        @apply font-semibold
+        &::after
+            width: 100%
+
+    &.active
+        &::after
+            width: 100%
