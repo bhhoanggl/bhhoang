@@ -16,8 +16,8 @@ const heroSlides = [
     image: "/images/hero/slide1.jpg",
     cta: {
       text: "Khám phá dịch vụ",
-      href: "#services"
-    }
+      href: "#services",
+    },
   },
   {
     title: "CHÚNG TÔI CUNG CẤP",
@@ -27,8 +27,8 @@ const heroSlides = [
     image: "/images/hero/slide2.jpg",
     cta: {
       text: "Xem bảng giá",
-      href: "#pricing"
-    }
+      href: "#pricing",
+    },
   },
   {
     title: "CÔNG NGHỆ",
@@ -38,9 +38,9 @@ const heroSlides = [
     image: "/images/hero/slide3.jpg",
     cta: {
       text: "Liên hệ ngay",
-      href: "#contact"
-    }
-  }
+      href: "#contact",
+    },
+  },
 ];
 
 export default function HomePage() {

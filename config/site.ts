@@ -2,7 +2,8 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "BHHoang Studio",
-  description: "Thiết kế và phát triển website chuyên nghiệp, tối ưu trải nghiệm người dùng.",
+  description:
+    "Thiết kế và phát triển website chuyên nghiệp, tối ưu trải nghiệm người dùng.",
   navItems: [
     {
       label: "Trang chủ",
@@ -63,6 +64,6 @@ export const siteConfig = {
   contact: {
     phone: "+84 093 177 1893",
     email: "bhhoanggl@gmail.com",
-    address: "123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh"
-  }
+    address: "123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh",
+  },
 };

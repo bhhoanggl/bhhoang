@@ -1,16 +1,11 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import clsx from "clsx";
 
-
 export default function Document() {
   return (
     <Html suppressHydrationWarning lang="en">
       <Head />
-      <body
-        className={clsx(
-          "min-h-screen bg-background antialiased",
-        )}
-      >
+      <body className={clsx("min-h-screen bg-background antialiased")}>
         <Main />
         <NextScript />
       </body>
