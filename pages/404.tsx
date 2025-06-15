@@ -10,23 +10,20 @@ export default function Error404() {
     return (
         <DefaultLayout>
             <Container>
-                <div className="flex items-center justify-center h-screen flex-col">
+                <div className="flex h-screen flex-col items-center justify-center">
                     <ImageOptimize
-                        src="/assets/images/404.png"
                         alt="404 gà con"
-                        width={400}
-                        height={400}
                         className="mx-auto"
+                        height={400}
                         lazyLoad={false}
+                        src="/assets/images/404.png"
+                        width={400}
                     />
-                    <p className="mt-4 text-2xl text-gray-800 font-semibold">Không tìm thấy trang!</p>
+                    <p className="mt-4 text-2xl font-semibold text-gray-800">Không tìm thấy trang!</p>
                     <p className="mt-2 text-gray-600">Có vẻ bạn đang lạc vào thế giới chưa được tạo ra 🐣</p>
-                    <Link
-                        href="/"
-                        className="mt-6 btn btn-primary"
-                    >
+                    <Link className="mt-6 btn btn-primary" href="/">
                         <Typography as="span" className="flex items-center">
-                            <IconArrowLeft size={24} className="mr-2" />
+                            <IconArrowLeft className="mr-2" size={24} />
                             Về trang chủ
                         </Typography>
                     </Link>
