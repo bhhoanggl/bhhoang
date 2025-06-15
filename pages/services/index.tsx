@@ -1,3 +1,4 @@
+import SEO from "@/components/common/SEO";
 import { NextPage } from "next";
 
 import ServiceOverview from "@/components/services/ServiceOverview";
@@ -9,6 +10,11 @@ import PageBanner from "@/components/banner/PageBanner";
 const ServicesPage: NextPage = () => {
   return (
     <>
+      <SEO
+        title="Dịch vụ thiết kế website, phát triển web app, e-commerce - BH Hoang"
+        description="Khám phá các dịch vụ thiết kế website, phát triển web app, e-commerce, bảo trì và nâng cấp hệ thống của BH Hoang. Đội ngũ chuyên nghiệp, giải pháp tối ưu cho doanh nghiệp."
+        keywords="dịch vụ thiết kế website, phát triển web app, e-commerce, bảo trì website, agency"
+      />
       <PageBanner
         description={"Các dịch vụ chuyên nghiệp của chúng tôi"}
         image={"/images/services/web-design/hero.png"}

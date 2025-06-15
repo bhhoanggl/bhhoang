@@ -1,3 +1,4 @@
+import SEO from "@/components/common/SEO";
 import HeroBanner from "@/components/banner/HeroBanner";
 import AboutServices from "@/components/home/AboutServices";
 import Contact from "@/components/home/Contact";
@@ -46,6 +47,11 @@ const heroSlides = [
 export default function HomePage() {
   return (
     <>
+      <SEO
+        title="BH Hoang Studio - Thiết kế & Phát triển Website chuyên nghiệp"
+        description="Dịch vụ thiết kế website, phát triển web app, e-commerce, tối ưu cho doanh nghiệp. Công nghệ hiện đại, bảo mật, tốc độ cao."
+        keywords="thiết kế website, phát triển web, web app, e-commerce, nextjs, react, agency"
+      />
       {/* Hero Banner */}
       <HeroBanner slides={heroSlides} />
 
