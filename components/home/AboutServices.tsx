@@ -31,7 +31,7 @@ const services = [
 
 export default function AboutServices() {
   return (
-    <section className="py-20 bg-gray-50 pl-[285px]" id="about">
+    <section className="py-20 bg-gray-50 pl-[285px]" id="services">
       <Container>
         <motion.div
           className="text-center mb-16"
