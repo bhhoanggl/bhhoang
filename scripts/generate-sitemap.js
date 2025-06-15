@@ -1,9 +1,7 @@
-const fs = require('fs');
-const { globby } = require('globby');
-const prettier = require('prettier');
+const { writeFileSync } = require('fs');
+const globby = require('globby');
 
 async function generateSitemap() {
-  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const pages = await globby([
     'pages/**/*.tsx',
     '!pages/_*.tsx',
@@ -23,9 +21,10 @@ async function generateSitemap() {
         const route = path === '/index' ? '' : path;
         return `
             <url>
-              <loc>${`https://bhhoang.com${route}`}</loc>
+              <loc>${`https://bhhoang.netlify.app${route}`}</loc>
+              <lastmod>${new Date().toISOString()}</lastmod>
               <changefreq>daily</changefreq>
-              <priority>${route === '' ? '1.0' : '0.7'}</priority>
+              <priority>0.7</priority>
             </url>
           `;
       })
@@ -33,12 +32,7 @@ async function generateSitemap() {
     </urlset>
   `;
 
-  const formatted = prettier.format(sitemap, {
-    ...prettierConfig,
-    parser: 'html',
-  });
-
-  fs.writeFileSync('public/sitemap.xml', formatted);
+  writeFileSync('public/sitemap.xml', sitemap);
 }
 
 generateSitemap();
