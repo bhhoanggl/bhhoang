@@ -1,9 +1,10 @@
+import { IconArrowLeft } from "@tabler/icons-react";
+import Link from "next/link";
+
 import Container from "@/components/common/Container";
 import ImageOptimize from "@/components/common/ImageOptimize";
 import Typography from "@/components/common/Typography";
 import DefaultLayout from "@/layouts/default";
-import { IconArrowLeft } from "@tabler/icons-react";
-import Link from "next/link";
 
 export default function Error404() {
     return (
